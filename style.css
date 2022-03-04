@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800;900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #2D3047;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #F7567c;  
+    font-family: "Poppins", sans-serif;
+    color: #fffae3;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3em;
+    margin: 1rem;
+    position: fixed;
+    left: 1%;
+    right: 1%;
+    box-shadow: 10px 10px 20px rgba(255, 250, 225, 0.25);
+}
+section {
+    margin-top: 8rem;
+    padding: 2%;
+}
+@keyframes buttonHover {
+    from {
+        box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.25);
+    }
+    to {
+        box-shadow: none;
+    }
+}
+
+a{
+    color: #F7567c;
+    background-color:#FFFAE3;
+    padding: 0.5rem 1rem;
+    margin: 0rem 1rem 0 0;
+    font-weight: 600;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+    font-family: 'Poppins';
+}
+a:hover {
+    animation: buttonHover ease-in-out;
+    animation-duration: 300ms;
+    box-shadow: none;
+}
+
+nav h2 {
+    margin-left: 1rem;
+}
+#selfDraw {
+    display: flex;
+    align-items: center;
+    color: #FFFAE3;
+    justify-content: space-between;
+
+}
+h1 {
+    text-align: center;
+    color: #FFFAE3;
+    font-size: 2rem;
+}
+
+#selfDraw div {
+    margin-left: 5%;
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#selfDraw div p {
+    margin-bottom: 1.5rem;
+}
+
+#otherExamples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#otherExamples div {
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+}
