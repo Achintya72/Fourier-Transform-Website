@@ -32,7 +32,9 @@ var selfDraw = function (p) {
     }
 
     p.mouseDragged = function () {
-        selfDrawTransform.points.push(new Complex(p.mouseX - p.width / 2, p.mouseY - p.height / 2))
+        if ((p.mouseX > 0 && p.mouseX < p.width) && (p.mouseY > 0 && p.mouseX < p.height)) {
+            selfDrawTransform.points.push(new Complex(p.mouseX - p.width / 2, p.mouseY - p.height / 2))
+        }
     }
 }
 
