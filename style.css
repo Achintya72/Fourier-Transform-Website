@@ -8,6 +8,7 @@ html, body {
     flex-direction: column;
     align-content: center;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -29,15 +30,21 @@ section {
     margin-top: 8rem;
     padding: 2%;
 }
-@keyframes buttonHover {
-    from {
-        box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.25);
-    }
-    to {
-        box-shadow: none;
-    }
+
+footer {
+    background-color: #131520;
+    color: #FFFAE3;
+    text-align: center;
+}
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+nav svg {
+    margin-right: 0.5rem;
+}
 a{
     color: #F7567c;
     background-color:#FFFAE3;
@@ -45,13 +52,12 @@ a{
     margin: 0rem 1rem 0 0;
     font-weight: 600;
     border-radius: 2rem;
-    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
     font-family: 'Poppins';
     text-decoration: none;
+    transition: box-shadow 200ms ease-in-out;
 }
 a:hover {
-    animation: buttonHover ease-in-out;
-    animation-duration: 300ms;
     box-shadow: none;
 }
 
@@ -63,12 +69,16 @@ nav h2 {
     align-items: center;
     color: #FFFAE3;
     justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
 
 }
 h1 {
-    text-align: center;
     color: #FFFAE3;
-    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #F7567c;
+    font-size: 3rem;
+    margin-bottom: 0.25rem;
 }
 
 #selfDraw div {
@@ -78,7 +88,7 @@ h1 {
 }
 
 #selfDraw div p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 #otherExamples {
@@ -87,7 +97,29 @@ h1 {
     justify-content: space-between;
 }
 
-#otherExamples div {
+#pageHeader {
+    text-align: center;
+}
+
+#batman, #superman, #flamingo {
     display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+    flex-direction: column-reverse;
+}
+#otherExamples h2 {
+    color: #FFFAE3;
+    text-decoration: underline;
+    text-decoration-color: #F7567c;
+}
+
+#other h1 {
+    margin-bottom: 1.5rem;
+}
+
+#otherExamples p {
+    color: #F7567c;
+}
+
+.p5Canvas {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+
 }

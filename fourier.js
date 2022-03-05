@@ -71,7 +71,11 @@ class Transform {
             y += amp * p.sin(freq * this.angle + phase)
             p.line(prevX, prevY, x, y)
         }
+        p.noStroke();
+        p.fill('#F7567c')
+        p.ellipse(x, y, 20)
         this.path.push({ x, y })
+        p.noFill();
         p.beginShape();
         p.stroke(255);
         p.strokeWeight(1);

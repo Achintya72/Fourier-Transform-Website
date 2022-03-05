@@ -62,7 +62,8 @@ var superman = function (p) {
         [199.5, 330.25],
         [25, 127.83],
         [85.5, 69],
-        [314, 69]
+        [314, 69],
+        [304.5, 92.43]
     ]
     let supermanTransform = new Transform();
     p.setup = () => {
@@ -72,6 +73,7 @@ var superman = function (p) {
             let [x, y] = supermanOriginal[i];
             supermanTransform.points.push(new Complex(x - p.width / 2, y - p.height / 2))
         }
+        p.frameRate(15)
         supermanTransform.calculateFourier()
     }
 
